@@ -1,5 +1,6 @@
 package com.cmc.figmadesign
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -7,9 +8,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.cmc.figmadesign.databinding.HomePageBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class MainActivity : AppCompatActivity() {
+class Home : AppCompatActivity() {
     private lateinit var binding: HomePageBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = HomePageBinding.inflate(layoutInflater)
@@ -21,9 +24,31 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        binding.progressBar.progress = 60
+        binding.linearLayout2.setOnClickListener{
+            val intent = Intent(this, Profil::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+        }
 
         hideSystemUI()
+
+        val bottomNavigationView: BottomNavigationView = binding.bottomNavContainer
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_home -> true
+                R.id.nav_person -> {
+                    val intent = Intent(this, Profil::class.java)
+                    startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+                    true
+                }
+                R.id.nav_chat -> true
+                R.id.nav_library -> true
+                R.id.nav_night -> true
+                else -> false
+            }
+        }
+        bottomNavigationView.selectedItemId = R.id.nav_home
     }
 
     private fun hideSystemUI() {
