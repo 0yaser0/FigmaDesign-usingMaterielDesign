@@ -7,32 +7,31 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.cmc.figmadesign.databinding.ProfilPageBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Profil : AppCompatActivity() {
-    private lateinit var binding: ProfilPageBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ProfilPageBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView (R.layout.profil_page)
         enableEdgeToEdge()
-
-        ViewCompat.setOnApplyWindowInsetsListener(binding.profil) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+        val profilView: View =
+            findViewById(R.id.profil)
+        ViewCompat.setOnApplyWindowInsetsListener(profilView) { v, insets ->
+            val systemBars =
+                insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(
+                systemBars.left,
+                systemBars.top,
+                systemBars.right,
+                systemBars.bottom
+            )
             insets
-        }
-        binding.profilePicture.setOnClickListener{
-            val intent = Intent(this, Home::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
 
         hideSystemUI()
 
-        val bottomNavigationView: BottomNavigationView = binding.bottomNavContainer
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_nav_container)
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
@@ -48,7 +47,8 @@ class Profil : AppCompatActivity() {
                 else -> false
             }
         }
-        bottomNavigationView.selectedItemId = R.id.nav_home
+        bottomNavigationView.selectedItemId = R.id.nav_person
+
     }
 
     private fun hideSystemUI() {

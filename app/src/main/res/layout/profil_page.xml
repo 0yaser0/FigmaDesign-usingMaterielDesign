@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/home"
+            android:text="@string/profile"
             android:textColor="#595085"
             android:textSize="20sp" />
 
@@ -67,7 +67,7 @@
                 android:layout_width="80dp"
                 android:layout_height="72dp"
                 android:layout_marginStart="16dp"
-                android:contentDescription="Profile Picture"
+                android:contentDescription="@string/profile_picture"
                 android:scaleType="centerCrop"
                 android:src="@drawable/profil_image"
                 app:layout_constraintBottom_toBottomOf="parent"
