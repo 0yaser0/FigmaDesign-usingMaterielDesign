@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FigmaDesign</string>
+    <string name="home">Home</string>
+    <string name="short_news_title_will_be_here">Short news title will be here</string>
+    <string name="news">News</string>
+    <string name="todo">TODO</string>
+    <string name="daily_tasks">Daily Tasks:</string>
+    <string name="daily_astromeditation">Daily\nastromeditation</string>
+    <string name="daily_sleep">Daily sleep\nastromeditation</string>
+    <string name="daily_mantr">Daily\nmantra</string>
+    <string name="_3">3</string>
+    <string name="_2">2</string>
+    <string name="_1">1</string>
+    <string name="your_overall_progress_is_60">Your overall progress is 60%</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel odio en urna ultrice…</string>
+    <string name="how_was_your_day">How was your day?</string>
+    <string name="profile">Profile</string>
+    <string name="messages">Messages</string>
+    <string name="library">Library</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="current_transist_3rd_house">Current Transist: 3rd House</string>
+    <string name="this_is_demonstrate">This is demonstrate siblings, hobbies, efforts, confidence, friends and short tr…</string>
+</resources>

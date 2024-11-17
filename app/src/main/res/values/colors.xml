@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="first_daily_task">#F6F5FB</color>
+    <color name="second_daily_task">#FFF4F4</color>
+    <color name="third_daily_task">#F5F9F9</color>
+    <color name="trackColor">#C93F8D</color>
+    <color name="firstColor">#403572</color>
+    <color name="secondColor">#FF5648</color>
+    <color name="secondColorLight">#A27A7A</color>
+    <color name="bottom_nav_color_selector">#8B97A8</color>
+</resources>

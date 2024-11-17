@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="news">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#595085</item>
+    </style>
+
+    <style name="daily_tasks_3">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#595085</item>
+    </style>
+
+    <style name="daily_tasks_2">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#FF5648</item>
+    </style>
+
+    <style name="daily_tasks_1">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#479696</item>
+    </style>
+
+    <style name="daily_astro_3">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#61598B</item>
+    </style>
+
+    <style name="daily_astro_2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#479696</item>
+    </style>
+
+    <style name="daily_astro_1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FF5648</item>
+    </style>
+
+    <style name="some_id_3">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#403572</item>
+    </style>
+
+    <style name="some_id_1">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#FF5648</item>
+    </style>
+
+    <style name="some_id_2">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#479696</item>
+    </style>
+
+    <style name="your_overal">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#595085</item>
+    </style>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/nav_person"
+        android:icon="@drawable/ic_user"
+        android:title="@string/profile" />
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/ic_chat_bubble"
+        android:title="@string/messages" />
+    <item
+        android:id="@+id/nav_library"
+        android:icon="@drawable/ic_book"
+        android:title="@string/library" />
+    <item
+        android:id="@+id/nav_night"
+        android:icon="@drawable/ic_moon"
+        android:title="@string/night_mode" />
+</menu>
