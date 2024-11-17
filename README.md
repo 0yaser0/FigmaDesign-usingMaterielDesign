@@ -45,6 +45,16 @@ An Android application developed using Material Design components, focusing on d
 
 ## Screenshots
 
+<p align="center" >
+________________Home Page__________________________________Profile Page________________
+</p>
+
+<p align="center">
+  <img src="https://github.com/0yaser0/FigmaDesign-usingMaterielDesign/blob/master/screenShot/HomePage.jpg" alt="Home Page" width="300" />
+  <img src="https://github.com/0yaser0/FigmaDesign-usingMaterielDesign/blob/master/screenShot/Profile_Page.jpg" alt="Profile Page" width="300" />
+</p>
+
+
 
 
 ## Acknowledgments
